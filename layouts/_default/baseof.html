@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="{{ `assets/syntax.css` | relURL }}">
     <link rel="stylesheet" href="{{ `assets/primer-build.css` | relURL }}">
     <link rel="stylesheet" href="{{ `assets/style.css` | relURL }}">
+    <link rel="stylesheet" href="{{ `assets/custom_style.css` | relURL }}">
   </head>
 
 
@@ -78,5 +79,6 @@
     <!-- MathJax -->
     <script type="text/x-mathjax-config">MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });</script>
     {{ end }}
+    {{ partial "final_footer.html" . }}
   </body>
 </html>
